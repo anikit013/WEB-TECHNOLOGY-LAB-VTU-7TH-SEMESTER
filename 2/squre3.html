@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     table, td, th {
+        border: 1px solid;
+        padding: 5px;
+        border-collapse: collapse;
+     }    
+    
+    table {
+    margin-left: 600px;
+    margin-top: 100px;
+    }
+
+    th{
+    background: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    }
+
+    </style>
+</head>
+<body>
+
+<center><h2>Squre and Cubes </h2></center>
+
+<hr>
+<p id="num">Enter a number</p>>
+<input for="num" type="number" oninput="generateSquareAndCube(this.value)"></input>
+<div id="demo"></div>
+
+<script>
+        function generateSquareAndCube(number) {
+            var table = "<table>";
+            var header = "<tr><th>Numeber</th><th>Square</th><th>Cube</th></tr>"
+            table += header;
+            for (i = 0; i <=number; i++) {
+                table += "<tr><td>"+i+"</td>"+"<td>"+(i*i)+"</td>"+"<td>"+Math.pow(i,3)+ "</td></tr>";
+            }
+            table += "</table>";
+            document.getElementById("demo").innerHTML = table;
+        }
+        
+</script>
+</body>
+</html>

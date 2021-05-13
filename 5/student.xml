@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="student.css" ?>
+<students>
+  <student>
+     <name>Name:Amar</name>
+     <usn>Usn:1PE16CS001</usn>
+     <college>College:PESIT-BSC</college>
+     <email>Email:amar@gmail.com</email>
+     <branch>Brach:CSE</branch>
+     <yoj>YOJ:01/01/1998</yoj>
+  </student>
+
+  <student>
+     <name>Name:Akbar</name>
+     <usn>Usn:1PE16CS002</usn>
+     <college>College:PESIT-BSC</college>
+     <email>Email:akbar@gmail.com</email>
+     <branch>Brach:CSE</branch>
+     <yoj>YOJ:02/01/1998</yoj>
+  </student>
+
+  <student>
+     <name>Name:Anthony</name>
+     <usn>Usn:1PE16CS003</usn>
+     <college>College:PESIT-BSC</college>
+     <email>Email:anthony@gmail.com</email>
+     <branch>Brach:CSE</branch>
+     <yoj>YOJ:03/01/1998</yoj>
+  </student>
+
+</students>

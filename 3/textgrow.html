@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The text Growing and Shrinking</title>
+    </head>
+
+
+    <script>
+            var font=0,t1;
+            function start(){
+           
+            t1=window.setInterval('grow()',100);
+    
+            }
+            function grow(){
+                id1.innerHTML="TEXT-GROWING"+font+"pt";
+                id1.style.fontSize=font+"pt";
+                id1.style.color="red";
+                
+                font=font+1;
+                
+                if(font>=50){
+                   window.clearInterval(t1);
+                   t1=window.setInterval('shrink()',100);
+                }
+                
+    
+            }
+            function shrink(){
+                
+                id1.innerHTML="TEXT-SHRINKING"+font+"pt";
+                id1.style.fontSize=font+"pt";
+                id1.style.color="blue";
+                
+                
+                font=font-1;
+               
+                if(font<=5){
+                    window.clearInterval(t1);
+                    t1=window.setInterval('grow()',100);
+
+                }
+                
+                
+
+            }
+    
+        </script>
+   
+    <body onload="start()">
+    <h1 style="text-align: center;">Text Growing and Shrinking </h1>
+    <hr>
+
+    <p id="id1" style="text-align: center;padding-top:200px; "></p>   
+    
+    </body>
+</html>

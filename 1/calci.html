@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<h1><center>Simple Calculator</center></h1>
+<center>
+<input type="number" id="num1"></input><br>
+<input type="number" id="num2"></input><br>
+<input type="number" id="result" Disabled placeholder="Result"></input><br>
+
+<input type="button" value="+" onclick="operation(this.value)"></input>
+<input type="button" value="-" onclick="operation(this.value)"></input>
+<input type="button" value="*" onclick="operation(this.value)"></input>
+<input type="button" value="/" onclick="operation(this.value)"></input></center>
+<script>
+
+function operation(OP)
+{
+var num1=parseInt(document.getElementById("num1").value);
+var num2=parseInt(document.getElementById("num2").value);
+var res=0;
+if(OP=='+')
+	res=num1+num2;
+if(OP=='-')
+	res=num1-num2;
+if(OP=='*')
+	res=num1*num2;
+if(OP=='/')
+	res=num1/num2;
+
+document.getElementById("result").value=res;
+}	
+</script>
+</body>
+</html>
